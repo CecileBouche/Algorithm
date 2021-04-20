@@ -1,0 +1,109 @@
+body {
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("../docs/ada.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  background-color: #78c2ad;
+  padding: 1rem;
+  margin: 1rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.instructions {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+#userCode {
+  padding: 1rem;
+  margin: 1rem;
+  font-family: monospace;
+  background-color: black;
+  color: greenyellow;
+  font-size: 1.4rem;
+  width: 60%;
+  height: 15rem;
+  border-radius: 5px;
+}
+
+#launchScript {
+  display: inline-block;
+  background-color: #f07f84;
+  color: white;
+  text-align: center;
+  border: 0;
+  margin: 0.625rem 0;
+  padding: 0.625rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: large;
+}
+
+.board {
+  text-align: center;
+}
+
+#board {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color:#DADADA;
+  border: 1px solid #DADADA;
+}
+
+.cellRow {
+  display: flex;
+}
+
+.cell {
+  background-color:#E9ECEF;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 1px;
+}
+
+.cellEnd {
+  background-color: #456d4f;
+}
+
+.cellCurrent::after {
+  content: url('https://api.iconify.design/carbon:caret-right.svg?color=%234C446D&height=60');
+  vertical-align: -0.125em;
+}
+
+.cellCurrent-top {
+  transform: rotate(-90deg);
+}
+
+.cellCurrent-bottom {
+  transform: rotate(90deg);
+}
+
+.cellCurrent-left {
+  transform: rotate(180deg);
+}
+
+.cellCurrent-right {
+  transform: rotate(0deg);
+}
